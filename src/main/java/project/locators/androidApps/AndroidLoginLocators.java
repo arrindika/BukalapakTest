@@ -1,4 +1,4 @@
-package project.locators;
+package project.locators.androidApps;
 
 public interface AndroidLoginLocators {
 }
