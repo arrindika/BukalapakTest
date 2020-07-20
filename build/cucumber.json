@@ -1,0 +1,159 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5484792500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Login Page",
+            "match": {
+              "location": "project.stepsdefinition.LoginStepDefinition.userIsOnLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 435830600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User click Forgot Password button",
+            "match": {
+              "location": "project.stepsdefinition.LoginStepDefinition.userClickForgotPasswordButton()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-06T02:25:58.568Z",
+        "before": [
+          {
+            "result": {
+              "duration": 108453208500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "project.hooks.AndroidDriverHooks.initializeWebdriver()"
+            }
+          }
+        ],
+        "line": 36,
+        "name": "FP-02-01 : User input registered email",
+        "description": "",
+        "id": "forgot-password;fp-02-01-:-user-input-registered-email",
+        "after": [
+          {
+            "result": {
+              "duration": 10016959400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "project.hooks.AndroidDriverHooks.quitWebdriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4301580200,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "User is on forgot password page",
+            "match": {
+              "location": "project.stepsdefinition.ForgotPasswordStepDefinition.userIsOnForgotPasswordPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 722071200,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "User input email \"boboy@gmail.com\" on Email Field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"boboy@gmail.com\"",
+                  "offset": 17
+                }
+              ],
+              "location": "project.stepsdefinition.ForgotPasswordStepDefinition.userInputEmailOnEmailField(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 996353700,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "User click send button",
+            "match": {
+              "location": "project.stepsdefinition.ForgotPasswordStepDefinition.userClickSendButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11537889300,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "User see error message on bottom \"Reset password link has been sent to your email.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Reset password link has been sent to your email.\"",
+                  "offset": 33
+                }
+              ],
+              "location": "project.stepsdefinition.ForgotPasswordStepDefinition.userSeeErrorMessageOnBottom(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ForgotPassword"
+          },
+          {
+            "name": "@ButtonSendForgotPassword"
+          },
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Forgot Password",
+    "description": "",
+    "id": "forgot-password",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/ForgotPassword.feature",
+    "tags": [
+      {
+        "name": "@ForgotPassword",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
