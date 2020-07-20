@@ -34,8 +34,20 @@ public class AndroidRegister {
     public void clickRegister() {
         AndroidDriverInstance.androidDriver.findElement(AndroidRegisterLocators.BUTTON_REGISTER).click();
     }
-    public String getWarningText(){
-        WebElement warningText = AndroidDriverInstance.androidDriver.findElement(AndroidRegisterLocators.TEXT_ERROR_MESSAGE);
+    public String getWarningNameText(){
+        WebElement warningText = AndroidDriverInstance.androidDriver.findElement(AndroidRegisterLocators.TEXT_ERRORNAME_MESSAGE);
+        return warningText.getText();
+    }
+    public String getWarningEmailText(){
+        WebElement warningText = AndroidDriverInstance.androidDriver.findElement(AndroidRegisterLocators.TEXT_ERROREMAIL_MESSAGE);
+        return warningText.getText();
+    }
+    public String getWarningPassText(){
+        WebElement warningText = AndroidDriverInstance.androidDriver.findElement(AndroidRegisterLocators.TEXT_ERRORPASS_MESSAGE);
+        return warningText.getText();
+    }
+    public String getWarningConPassText(){
+        WebElement warningText = AndroidDriverInstance.androidDriver.findElement(AndroidRegisterLocators.TEXT_ERRORCONPASS_MESSAGE);
         return warningText.getText();
     }
     public String toastmessage(){

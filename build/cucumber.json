@@ -3,63 +3,30 @@
     "line": 2,
     "elements": [
       {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 5484792500,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User is on Login Page",
-            "match": {
-              "location": "project.stepsdefinition.LoginStepDefinition.userIsOnLoginPage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 435830600,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User click Forgot Password button",
-            "match": {
-              "location": "project.stepsdefinition.LoginStepDefinition.userClickForgotPasswordButton()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-07-06T02:25:58.568Z",
+        "start_timestamp": "2020-07-20T03:56:22.991Z",
         "before": [
           {
             "result": {
-              "duration": 108453208500,
+              "duration": 7059489900,
               "status": "passed"
             },
             "match": {
-              "location": "project.hooks.AndroidDriverHooks.initializeWebdriver()"
+              "location": "project.hooks.WebDriverHooks.initializeWebdriver()"
             }
           }
         ],
-        "line": 36,
-        "name": "FP-02-01 : User input registered email",
+        "line": 5,
+        "name": "User Login with valid username and password",
         "description": "",
-        "id": "forgot-password;fp-02-01-:-user-input-registered-email",
+        "id": "bukalapak-website;user-login-with-valid-username-and-password",
         "after": [
           {
             "result": {
-              "duration": 10016959400,
+              "duration": 691479400,
               "status": "passed"
             },
             "match": {
-              "location": "project.hooks.AndroidDriverHooks.quitWebdriver(io.cucumber.java.Scenario)"
+              "location": "project.hooks.WebDriverHooks.quitWebdriver(io.cucumber.java.Scenario)"
             }
           }
         ],
@@ -68,86 +35,95 @@
         "steps": [
           {
             "result": {
-              "duration": 4301580200,
+              "duration": 7401158600,
               "status": "passed"
             },
-            "line": 37,
-            "name": "User is on forgot password page",
+            "line": 6,
+            "name": "User open login page bukalapak",
             "match": {
-              "location": "project.stepsdefinition.ForgotPasswordStepDefinition.userIsOnForgotPasswordPage()"
+              "location": "project.steps_definition.WebsiteBukalapakSteps.userOpenLoginPageBukalapak()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 722071200,
+              "duration": 740991700,
               "status": "passed"
             },
-            "line": 38,
-            "name": "User input email \"boboy@gmail.com\" on Email Field",
+            "line": 7,
+            "name": "User input email \"fanikim00@gmail.com\" on email field",
             "match": {
               "arguments": [
                 {
-                  "val": "\"boboy@gmail.com\"",
+                  "val": "\"fanikim00@gmail.com\"",
                   "offset": 17
                 }
               ],
-              "location": "project.stepsdefinition.ForgotPasswordStepDefinition.userInputEmailOnEmailField(java.lang.String)"
+              "location": "project.steps_definition.WebsiteBukalapakSteps.userInputEmailOnEmailField(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 996353700,
+              "duration": 135410200,
               "status": "passed"
             },
-            "line": 39,
-            "name": "User click send button",
+            "line": 8,
+            "name": "User input password \"P@ssw0rd\" on password field",
             "match": {
-              "location": "project.stepsdefinition.ForgotPasswordStepDefinition.userClickSendButton()"
+              "arguments": [
+                {
+                  "val": "\"P@ssw0rd\"",
+                  "offset": 20
+                }
+              ],
+              "location": "project.steps_definition.WebsiteBukalapakSteps.userInputPasswordOnPasswordField(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 11537889300,
+              "duration": 124425000,
               "status": "passed"
             },
-            "line": 40,
-            "name": "User see error message on bottom \"Reset password link has been sent to your email.\"",
+            "line": 9,
+            "name": "User click Login on login page",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Reset password link has been sent to your email.\"",
-                  "offset": 33
-                }
-              ],
-              "location": "project.stepsdefinition.ForgotPasswordStepDefinition.userSeeErrorMessageOnBottom(java.lang.String)"
+              "location": "project.steps_definition.WebsiteBukalapakSteps.userClickLoginOnLoginPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1398800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User is on Homepage",
+            "match": {
+              "location": "project.steps_definition.WebsiteBukalapakSteps.userIsOnHomepage()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@ForgotPassword"
+            "name": "@Web"
           },
           {
-            "name": "@ButtonSendForgotPassword"
-          },
-          {
-            "name": "@SmokeTest"
+            "name": "@Login"
           }
         ]
       }
     ],
-    "name": "Forgot Password",
+    "name": "Bukalapak Website",
     "description": "",
-    "id": "forgot-password",
+    "id": "bukalapak-website",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/ForgotPassword.feature",
+    "uri": "file:src/test/resources/features/WebsiteBukalapak.feature",
     "tags": [
       {
-        "name": "@ForgotPassword",
+        "name": "@Web",
         "type": "Tag",
         "location": {
           "line": 1,

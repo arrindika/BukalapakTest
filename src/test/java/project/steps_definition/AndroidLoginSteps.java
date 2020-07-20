@@ -46,7 +46,13 @@ public class AndroidLoginSteps {
 
     @Then("User see error message field that {string}")
     public void userSeeErrorMessageFieldThat(String message) {
-        String errorText = androidLogin.getWarningText();
-        Assert.assertEquals(errorText, message);
+        if (message == "1") {
+            String errorText = androidLogin.getWarningEmailText();
+            Assert.assertEquals(errorText, "Enter Valid Email");
+        }
+        else if (message == "2"){
+            String errorText = androidLogin.getWarningPassText();
+            Assert.assertEquals(errorText, "Enter Valid Password");
+        }
     }
 }

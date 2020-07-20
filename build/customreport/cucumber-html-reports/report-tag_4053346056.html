@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
 
-<title>Cucumber Reports (no 0) - Tag: @SmokeTest</title>
+<title>Cucumber Reports (no 0) - Tag: @Login</title>
 
 </head>
 <body>
@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>root project 'BukalapakTest'</td>
         <td>0</td>
-      <td>20 Jul 2020, 12:03</td>
+      <td>20 Jul 2020, 12:56</td>
     </tr>
   </tbody>
 </table>
@@ -128,19 +128,19 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">@SmokeTest</td>
-          <td      class="passed"    >4</td>
+          <td class="tagname">@Login</td>
+          <td      class="passed"    >5</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">4</td>
+          <td class="total">5</td>
 
           <td  class="passed"    >1</td>
           <td >0</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="17557894400">17.557</td>
+          <td class="duration" data-value="8403384300">8.403</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -173,26 +173,25 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_588089145.html">Forgot Password</a>
+      <a href="report-feature_3965643196.html">Bukalapak Website</a>
     </div>
 
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_3769469757.html">@ForgotPassword</a>
-       <a href="report-tag_1677040567.html">@ButtonSendForgotPassword</a>
-       <a href="report-tag_2341313088.html">@SmokeTest</a>
+       <a href="report-tag_2149477107.html">@Web</a>
+       <a href="report-tag_4053346056.html">@Login</a>
 </div>
 
 
-  <span class="lead-duration duration">17.557</span>
+  <span class="lead-duration duration">8.403</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">FP-02-01 : User input registered email</span>
+  <span class="name">User Login with valid username and password</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -221,9 +220,9 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-              <span class="location name">project.hooks.AndroidDriverHooks.initializeWebdriver()</span>
+              <span class="location name">project.hooks.WebDriverHooks.initializeWebdriver()</span>
 
-  <span class="lead-duration duration">1:48.453</span>
+  <span class="lead-duration duration">7.059</span>
 
           </div>
 
@@ -258,9 +257,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
-  <span class="name">User is on forgot password page</span>
+  <span class="name">User open login page bukalapak</span>
 
-  <span class="lead-duration duration">4.301</span>
+  <span class="lead-duration duration">7.401</span>
 
 </div>
 
@@ -285,9 +284,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">User input email <span class="argument">&quot;boboy@gmail.com&quot;</span> on Email Field</span>
+  <span class="name">User input email <span class="argument">&quot;fanikim00@gmail.com&quot;</span> on email field</span>
 
-  <span class="lead-duration duration">0.722</span>
+  <span class="lead-duration duration">0.740</span>
 
 </div>
 
@@ -312,9 +311,36 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">User click send button</span>
+  <span class="name">User input password <span class="argument">&quot;P@ssw0rd&quot;</span> on password field</span>
 
-  <span class="lead-duration duration">0.996</span>
+  <span class="lead-duration duration">0.135</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User click Login on login page</span>
+
+  <span class="lead-duration duration">0.124</span>
 
 </div>
 
@@ -339,9 +365,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">User see error message on bottom <span class="argument">&quot;Reset password link has been sent to your email.&quot;</span></span>
+  <span class="name">User is on Homepage</span>
 
-  <span class="lead-duration duration">11.537</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -384,9 +410,9 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">project.hooks.AndroidDriverHooks.quitWebdriver(io.cucumber.java.Scenario)</span>
+              <span class="location name">project.hooks.WebDriverHooks.quitWebdriver(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">10.016</span>
+  <span class="lead-duration duration">0.691</span>
 
           </div>
 

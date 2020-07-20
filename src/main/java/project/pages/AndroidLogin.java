@@ -30,11 +30,15 @@ public class AndroidLogin {
         return wait.until(ExpectedConditions.presenceOfElementLocated(AndroidLoginLocators.SUCCESS)).isDisplayed();
     }
     public String toastmessage(){
-        WebElement errorMessage = AndroidDriverInstance.androidDriver.findElement(AndroidRegisterLocators.POP_UP_MESSAGE);
+        WebElement errorMessage = AndroidDriverInstance.androidDriver.findElement(AndroidLoginLocators.POP_UP_MESSAGE);
         return errorMessage.getAttribute("name");
     }
-    public String getWarningText(){
-        WebElement warningText = AndroidDriverInstance.androidDriver.findElement(AndroidRegisterLocators.TEXT_ERROR_MESSAGE);
+    public String getWarningEmailText(){
+        WebElement warningText = AndroidDriverInstance.androidDriver.findElement(AndroidLoginLocators.TEXT_ERROREMAIL_MESSAGE);
+        return warningText.getText();
+    }
+    public String getWarningPassText(){
+        WebElement warningText = AndroidDriverInstance.androidDriver.findElement(AndroidLoginLocators.TEXT_ERRORPASS_MESSAGE);
         return warningText.getText();
     }
 }

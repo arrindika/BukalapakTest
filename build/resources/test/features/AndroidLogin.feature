@@ -4,8 +4,8 @@ Feature: Login
   @Positive
   Scenario: User Login with valid username and password
     Given User is on Login Page
-    When User input email "boboy@gmail.com" on email text field
-    Given User input password "P@ssw0rd" on password text field
+    When User input email "boyiki@mail.com" on email text field
+    Given User input password "password" on password text field
     And User click login button on Login page
     Then User login success
 
@@ -19,9 +19,9 @@ Feature: Login
 
     Examples:
     |           email           |       password      |             message              |
-    |      boboy@gmail.com      |       P@ssw0r       |      Wrong Email or Password     |
-    |      boboy@gmail.co       |       P@ssw0rd      |      Wrong Email or Password     |
-    |      boboy@gmail.co       |       P@ssw0r       |      Wrong Email or Password     |
+    |      boyiki@mail.com      |       passwor       |      Wrong Email or Password     |
+    |      boyiki@mail.co       |       password      |      Wrong Email or Password     |
+    |      boyiki@mail.co       |       passwor       |      Wrong Email or Password     |
 
   @NegativeEmpty
   Scenario Outline:
@@ -32,7 +32,7 @@ Feature: Login
     Then User see error message field that "<message>"
 
     Examples:
-      |           email           |       password      |           message          |
-      |      boboy@gmail.com      |                     |      Enter Valid Email     |
-      |                           |       P@ssw0rd      |      Enter Valid Email     |
-      |                           |                     |      Enter Valid Email     |
+      |           email           |       password      |   message  |
+      |      boyiki@mail.com      |                     |      2     |
+      |                           |       password      |      1     |
+      |                           |                     |      1     |

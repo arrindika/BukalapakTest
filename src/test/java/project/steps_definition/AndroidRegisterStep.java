@@ -61,7 +61,21 @@ public class AndroidRegisterStep {
 
     @Then("User see error message {string}")
     public void userSeeErrorMessage(String message) {
-        String errorText = androidRegister.getWarningText();
-        Assert.assertEquals(errorText, message);
+        if (message == "1") {
+            String errorText = androidRegister.getWarningNameText();
+            Assert.assertEquals(errorText, "Enter Full Name");
+        }
+        else if (message == "2"){
+            String errorText = androidRegister.getWarningEmailText();
+            Assert.assertEquals(errorText, "Enter Valid Email");
+        }
+        else if (message == "3") {
+            String errorText = androidRegister.getWarningPassText();
+            Assert.assertEquals(errorText, "Enter Password");
+        }
+        else if (message == "4"){
+            String errorText = androidRegister.getWarningConPassText();
+            Assert.assertEquals(errorText, "Password Does Not Matches");
+        }
     }
 }
